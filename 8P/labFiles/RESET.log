@@ -1,0 +1,249 @@
+-------------------------------4/25/17 10:59 AM-------------------------------
+
+**** File --> dna-seq.txt <--
+**** Input --> the dog was brown and black <--
+**** Regex --> ATdog <--Flags: MLine 
+**** Regex --> dog <--Flags: MLine 
+**** FindAll match count: 1
+**** Find
+**** FindAll match count: 1
+**** FindAll match count: 1
+**** File --> dna-seq.txt <--
+**** Regex --> ATAT <--Flags: MLine 
+**** FindAll match count: 6
+**** Find
+**** Find
+**** Find
+**** FindAll match count: 6
+**** Input --> the, dog, was, yellow, brown, black, and blue, and. jumped, over, my, shoe <--
+**** Regex --> yellow <--Flags: MLine 
+**** Split
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** Input --> the,dog,was,yellow,brown,blue,and,black <--
+**** Split
+**** FindAll match count: 7
+**** Split
+**** Input --> a;word,is,very;short,and,doesnt:have,much:to:it;because <--
+**** Split
+**** FindAll match count: 5
+**** Regex --> ,|:|; <--Flags: MLine 
+**** FindAll match count: 11
+**** Split
+**** Input --> a dog is very short and long and another dog is very big. <--
+**** Regex --> dog <--Flags: MLine 
+**** Split
+**** FindAll match count: 2
+**** Regex --> i* <--Flags: MLine 
+**** FindAll match count: 58
+**** Split
+**** FindAll match count: 58
+**** Regex --> ng* <--Flags: MLine 
+**** FindAll match count: 4
+**** Split
+**** Regex --> ng+ <--Flags: MLine 
+**** FindAll match count: 1
+**** Split
+**** File --> short.csv <--
+**** Regex --> ng+, <--Flags: MLine 
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 117
+**** Split
+**** Regex --> ".*" <--Flags: MLine 
+**** FindAll match count: 28
+**** Split
+**** FindAll match count: 28
+**** Regex --> \|*\| <--Flags: MLine 
+**** FindAll match count: 56
+**** Split
+**** FindAll match count: 56
+**** Regex --> \|.*\| <--Flags: MLine 
+**** FindAll match count: 28
+**** Split
+**** FindAll match count: 28
+**** Regex --> ".*" <--Flags: MLine 
+**** FindAll match count: 28
+**** Regex --> \|AC* <--Flags: MLine 
+**** Find
+**** Regex --> \|(AC)* <--Flags: MLine 
+**** FindAll match count: 56
+**** Regex --> (\|AC)* <--Flags: MLine 
+**** FindAll match count: 1581
+**** Regex --> (\|AC)+ <--Flags: MLine 
+**** FindAll match count: 13
+**** Regex --> (\|A)+(.*8)+ <--Flags: MLine 
+**** FindAll match count: 18
+**** Regex --> (\|A)+(.*8)+ <--Flags: MLine 
+**** Regex --> (\|A)+(.*8)+ <--Flags: MLine 
+**** Regex --> (\|A)+(.*8)+ <--Flags: MLine 
+**** Regex --> (\|A)+(.*8)+ <--Flags: MLine 
+-------------------------------4/25/17 11:10 AM-------------------------------
+
+**** Input --> there, was, a, big, black, dog <--
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 5
+**** Regex --> ,  <--Flags: MLine 
+**** Split
+**** Input --> there:was.a;big:black,dog <--
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 1
+**** Regex --> ,|:|; <--Flags: MLine 
+**** Split
+**** FindAll match count: 4
+-------------------------------4/25/17 11:12 AM-------------------------------
+
+**** Input --> there, was, a, big, black, dog <--
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 5
+**** Regex --> ,  <--Flags: MLine 
+**** Split
+**** FindAll match count: 5
+**** Input --> there:was,a;big:black,dog <--
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 2
+**** Regex --> ,|:|; <--Flags: MLine 
+**** Split
+**** FindAll match count: 5
+**** Input --> the clock and clown had something clumsy in common <--
+**** Regex --> ,|:|; <--Flags: MLine 
+**** Regex --> ,|:|; <--Flags: MLine 
+**** Regex --> cl <--Flags: MLine 
+**** Split
+**** FindAll match count: 3
+**** Regex --> cl* <--Flags: MLine 
+**** FindAll match count: 5
+**** Split
+**** FindAll match count: 5
+**** Regex --> cl+ <--Flags: MLine 
+**** Split
+**** FindAll match count: 3
+**** File --> short.csv <--
+**** Regex --> cl+, <--Flags: MLine 
+**** Regex --> , <--Flags: MLine 
+**** Split
+**** FindAll match count: 117
+**** Regex --> ".*" <--Flags: MLine 
+**** Split
+**** FindAll match count: 28
+**** Regex --> ".*" <--Flags: MLine 
+**** Regex --> ".*" <--Flags: MLine 
+**** Regex --> ".*" <--Flags: MLine 
+**** Regex --> ".*" <--Flags: MLine 
+**** Regex --> \|.*\| <--Flags: MLine 
+**** Split
+**** FindAll match count: 28
+**** Regex --> (\|AC)+ <--Flags: MLine 
+**** Split
+**** FindAll match count: 13
+**** Regex --> (\|A)+(.*8){1} <--Flags: MLine 
+**** FindAll match count: 18
+**** Split
+**** Regex --> (\|A)+(.*8){1}$(\|) <--Flags: MLine 
+**** FindAll match count: 0
+**** FindAll match count: 0
+**** Regex --> (\|A)+(.*8){1}$(.*\|) <--Flags: MLine 
+**** FindAll match count: 0
+**** Split
+**** FindAll match count: 0
+**** Regex --> (\|A)+(.*8){1}+$(.*\|) <--Flags: MLine 
+**** Split
+**** FindAll match count: 0
+**** Regex --> (\|A)+(.*8){3}$(.*\|) <--Flags: MLine 
+**** FindAll match count: 0
+**** Split
+**** Regex --> (\|A)+(.*8){1}$(.*\|) <--Flags: MLine 
+**** FindAll match count: 0
+**** Split
+**** Regex --> (\|A)+(.*8)+$(.*\|) <--Flags: MLine 
+**** FindAll match count: 0
+**** Split
+**** Regex --> (\|A)+(.*8)+(.*\|) <--Flags: MLine 
+**** FindAll match count: 13
+**** Find
+**** FindAll match count: 13
+**** Split
+**** FindAll match count: 13
+**** Regex --> (\n.*e.*)+ <--Flags: MLine 
+**** FindAll match count: 5
+**** Regex --> (\n.*e-.*)+ <--Flags: MLine 
+**** FindAll match count: 1
+**** Split
+**** FindAll match count: 1
+**** Regex --> (\n.*gb.*)+ <--Flags: MLine 
+**** FindAll match count: 4
+**** Regex --> (\n.*gb.*\n)+ <--Flags: MLine 
+**** FindAll match count: 8
+**** Regex --> (\n.*e-.*\n)+ <--Flags: MLine 
+**** FindAll match count: 1
+**** Split
+**** FindAll match count: 1
+**** Regex --> (\n.*gb.*\n)+ <--Flags: MLine 
+**** Regex --> (\n.*gb.*Mus.*\n)+ <--Flags: MLine 
+**** Find
+**** FindAll match count: 4
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** FindAll match count: 5
+**** Split
+**** FindAll match count: 5
+**** Regex --> (.*e-.*)+ <--Flags: MLine 
+**** FindAll match count: 1
+**** Split
+**** FindAll match count: 1
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** FindAll match count: 5
+**** Split
+**** FindAll match count: 5
+**** File --> headers.txt <--
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** Regex --> (.*gb.*Mus.*)+ <--Flags: MLine 
+**** Regex --> : <--Flags: MLine 
+**** Split
+**** FindAll match count: 59
+**** Regex --> :(.*:3:.*)+ <--Flags: MLine 
+**** FindAll match count: 0
+**** Regex --> (.*:3:.*)+ <--Flags: MLine 
+**** FindAll match count: 4
+**** Regex --> (\(*\).*\(.*\))+ <--Flags: MLine 
+**** FindAll match count: 4
+**** Regex --> (\(.*\).*\(.*\))+ <--Flags: MLine 
+**** FindAll match count: 4
+**** File --> dna-seq.txt <--
+**** Regex --> (>.*) <--Flags: MLine 
+**** Regex --> (>.*)+ <--Flags: MLine 
+**** FindAll match count: 2
+**** Regex --> ((AT)+|G+|C+)(AT)* <--Flags: MLine 
+**** FindAll match count: 496
+**** Regex --> (AT)+G+C+(AT)* <--Flags: MLine 
+**** FindAll match count: 5
+**** Regex --> (AT)+(G+|C+)(AT)* <--Flags: MLine 
+**** FindAll match count: 34
+**** Regex --> (AT)+(G+|C+)+(AT)* <--Flags: MLine 
+**** FindAll match count: 33
+**** Regex --> (ATG)+.*((TGA)|(TAG)) <--Flags: MLine 
+**** Regex --> (ATG)+.*((TGA)|(TAG))+ <--Flags: MLine 
+**** FindAll match count: 8
+**** Regex --> (ATG)+(.*.*.*)+((TGA)|(TAG))+ <--Flags: MLine 
+-------------------------------4/25/17 11:31 AM-------------------------------
+
+**** File --> dna-seq.txt <--
+**** Regex --> (ATG)+(.*.*.*)+(TAG|TGA)+ <--Flags: MLine 
+-------------------------------4/25/17 11:32 AM-------------------------------
+
+**** File --> dna-seq.txt <--
+**** Regex --> (ATG)+.*{3}(TAG|TGA)+ <--Flags: MLine 
+**** FindAll match count: 8
+**** Regex --> (ATG)+(.*{3})(TAG|TGA)+ <--Flags: MLine 
+**** FindAll match count: 8
+**** Regex --> (ATG)+((A|T|G|C){3})*(TAG|TGA)+ <--Flags: MLine 
+**** FindAll match count: 1
+-------------------------------4/26/17 11:08 AM-------------------------------
+
+-------------------------------4/26/17 11:13 AM-------------------------------
+

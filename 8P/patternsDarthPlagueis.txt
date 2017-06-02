@@ -1,0 +1,7 @@
+the.*the
+ironic.*
+...he...
+the wise+
+(p|P)lagueis
+(j|J)edi.*(s|S)ith\s
+[A-Z].*\.

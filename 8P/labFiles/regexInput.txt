@@ -1,0 +1,2 @@
+[^abcd] [^ACY] [abcd] [acy]
+^[abcd12] [^abcd12]

@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////////
+// If vehicle is moving, update its position (by calling its 
+//    newFrame method. 
+// Somehow, need to know if it has reached its goal position. 
+//    If so, figure out what the next goal should be.
+// 
+//    If previous goal was emergency site, new goal is hospital
+//    If previous goal was a hospital (or if it was at home,
+//       or if it was going home), new goal is the next
+//       emergency site, if there is one, or home if no more 
+//       emergencies.
+//////////////////////////////////////////////////////////////
+
+// if EMTVehicle is animated
+//     EMTVehicle newFrame is called
+// else if EMTVehicle has reached it's goal
+//     if lastGoal was EmergencySite
+//         EMTVehicle travelTo Hospital
+//     else if lastGoal was Hospital
+//         if _sites is not null
+//             EMTVehicle travelTo EmergencySite
+//         else
+//             EMTVehicle travelTo Home

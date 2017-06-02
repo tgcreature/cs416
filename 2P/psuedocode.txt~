@@ -1,0 +1,75 @@
+//////////////////////////////////////////////////////////////
+// If vehicle is moving, update its position (by calling its 
+//    newFrame method. 
+// Somehow, need to know if it has reached its goal position. 
+//    If so, figure out what the next goal should be.
+// 
+//    If previous goal was emergency site, new goal is hospital
+//    If previous goal was a hospital (or if it was at home,
+//       or if it was going home), new goal is the next
+//       emergency site, if there is one, or home if no more 
+//       emergencies.
+//////////////////////////////////////////////////////////////
+
+
+
+
+
+// if EMTVehicle is animated
+//     EMTVehicle newFrame is called
+// else if EMTVehicle has reached it's goal
+//     if lastGoal was EmergencySite
+//         EMTVehicle travelTo Hospital
+//     else if lastGoal was Hospital
+//         if _sites is not null
+//             EMTVehicle travelTo EmergencySite
+//         else
+//             EMTVehicle travelTo Home
+
+
+
+
+
+/**
+ * if( _emt.isAnimated() )
+        {
+            System.out.println( "EMT is animated" );
+            _emt.newFrame();
+            if( cur != null )
+            {
+                cur.setDraggable( false );
+                cur.setClickable( false );
+                _path.setPoints( _emt.getX(), _emt.getY(), cur.getXLocation(),
+                                 cur.getYLocation() );
+            }
+        }
+        else if( _emt.atGoal() )
+        {
+            System.out.println( "EMT is at goal" );
+            if( cur != null )
+            {
+                if( _emt.getX() == cur.getXLocation() && 
+                    _emt.getY() == cur.getYLocation() )
+                {
+                    _sites.remove( cur );
+                    cur = null;
+                    Hospital hos = getClosestHospital( new Point( _emt.getX(), 
+                                                                  _emt.getY() ) 
+                                                      );
+                    _emt.travelTo( hos.getLocation().x, hos.getLocation().y, 
+                                   EMTApp.highSpeed );
+                    System.out.println( "Going to hospital" );
+                }
+                else
+                    _emt.travelTo( cur.getXLocation(), cur.getYLocation(), 
+                                   EMTApp.highSpeed );
+            }
+            else
+            {
+                if( cur == null )
+                _emt.travelTo( _emt.getHomePoint().x, 
+                               _emt.getHomePoint().y, 
+                               EMTApp.normalSpeed );
+                System.out.println( "Going home" );
+            }
+*/

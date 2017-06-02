@@ -1,0 +1,6 @@
+chosen one
+sith.{15}\.
+.*:
+[a-z]+,
+size|Size
+(a|e|i|o|u)+[a-z]*

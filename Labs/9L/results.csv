@@ -1,0 +1,13 @@
+Original implementation (add to position 0),,
+ ,Push Time,Pop Time
+100000:  ,0.999,0.848
+ , ,
+Revised implementation (add to end),,
+ ,Push Time,Pop Time
+100000:,0.005,0
+1000000:,0.027,0
+ ,,
+ ---------------------------------------------------------------,,
+,,
+ 6. Why do you think the first implementation is so much worse than the second?,,
+The first implementation is most likely worse because it has to move all of the values down on index. Where the second implementation simply adds a value to the end.,,
